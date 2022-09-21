@@ -1,0 +1,235 @@
+﻿
+<br />
+<div>
+    <div class="row">
+        <div class="col-sm-5">
+            <input class="form-control-file" type="file" id="fileUpload" accept=".xml" />
+        </div>
+        <div class="col-sm-5">
+            <button id="btnXml">Ver XML</button>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-sm-5">
+            <button id="btnOC">Generar OC</button>
+        </div>
+    </div>
+
+    <hr />
+    <h4 class="text-center">Datos del Emisor</h4>
+    <div>
+        <table class="table table-borderless shadow bg-white rounded" id="tblEmisor">
+            <thead class="bg-info text-white">
+                <tr class="text-center">
+                    <th>RFC</th>
+                    <th>Nombre</th>
+                    <th>Regimen</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <hr />
+    <h4 class="text-center">Datos del Receptor</h4>
+    <div>
+        <table class="table table-borderless shadow bg-white rounded" id="tblReceptor">
+            <thead class="bg-info text-white text-center">
+                <tr class="">
+                    <th>RFC</th>
+                    <th>Nombre</th>
+                    <th>Uso CFDI</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <hr />
+    <h4 class="text-center">Datos del comprobante</h4>
+    <div>
+        <table class="table table-borderless shadow bg-white rounded" id="tblXml">
+            <thead class="bg-info text-white">
+                <tr class="text-center">
+                    <th>Fecha</th>
+                    <th>Moneda</th>
+                    <th>Subtotal</th>
+                    <th>Descuento</th>
+                    <th>Total IVA</th>
+                    <th>Total</th>
+                    <th>Forma de pago</th>
+                    <th>Metodo de pago</th>
+                    <th>Serie</th>
+                    <th>Folio</th>
+                    <th>Tipo comprobante</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <hr />
+    <h4 class="text-center">Datos de conceptos</h4>
+    <div>
+        <table class="table table-borderless shadow bg-white rounded" id="tblProductos">
+            <thead class="bg-info text-white">
+                <tr class="text-center">
+                    <th>Clave SAT</th>
+                    <th>Descripcion</th>
+                    <th>Calve unidad</th>
+                    <th>Unidad</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                    <th>Descuento</th>
+                    <th>IVA</th>
+                    <th>Importe IVA</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+<!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+    <div class="modal fade" id="modal_generar_oc_express" tabindex="-1"  role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Envío de Orden de Compra a proveedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form" id="form_generar_orden_compra_express" autocomplete="off">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="" class="col-lg-3 control-label">Proveedor:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control particular-express" id="s_Proveedor" name="s_Proveedor" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="" class="col-lg-3 control-label">Fecha entrega:</label>
+                                    <div class="col-lg-4">
+                                        <input id="fechaOC" type="date" class="form-control" style="padding: 5px !important" name="d_FechaEntrega" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="" class="col-lg-3 control-label">Descripción:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control particular-express" name="s_Descripcion" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-lg-3 control-label">Condiciones de Entrega acordadas:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control particular-express" name="s_CondicionesEntrega" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-lg-3 control-label">Observaciones:</label>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control particular-express" rows="4" style="resize:none" name="s_Observaciones" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="" class="col-lg-2 control-label">Productos añadidos:</label>
+                            <div class="col-lg-10">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="table_productos_express">
+                                        <thead>
+                                            <tr>
+                                                <th>Producto</th>
+                                                <th>Cantidad</th>
+                                                <th>Precio c/u</th>
+                                                <th>Iva</th>
+                                                <th>Descuento</th>
+                                                <th>Retención</th>
+                                                <th>Total</th>
+                                                <th>Precio total</th>
+                                                <th>Observaciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Condiciones de Pago</h4>
+                        </div>
+
+                        <div class="col-md-12">
+                            <table class="table table-bordered" id="tbl_condiciones_pago_express">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha Programada</th>
+                                        <th>Concepto</th>
+                                        <th>Penalización</th>
+                                        <th>% Penalización</th>
+                                        <th>$ Descuento</th>
+                                        <th>Monto</th>
+                                        <th>Agregar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="trPagos">
+                                        <td>
+                                            <input type="date" class="form-control" id="fechaPagoOC" style="padding: 5px !important">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <select class="form-control m-b-sm" data-placeholder="Seleccionar" name="s_penalizacion">
+                                                <option></option>
+                                                <option value="Ninguna">Ninguna</option>
+                                                <option value="No entregar a tiempo">No entregar a tiempo</option>
+                                                <option value="Incumplimiento de contrato">Incumplimiento de contrato</option>
+                                                <option value="Entregar mal">Entregar mal</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input id="penalizacion" type="text" class="form-control" onkeyup="this.value=this.value.replace(/[^\d|.]/,'')">
+                                        </td>
+                                        <td>
+                                            <input id="descuentoOC" type="text" class="form-control monto-descuento" onchange="agregarDescuento()" onkeyup="this.value=this.value.replace(/[^\d|.]/,'')">
+                                        </td>
+                                        <td>
+                                            <input id="totalOC" type="text" class="form-control monto-total" onkeyup="this.value=this.value.replace(/[^\d|.]/,'')">
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" id="btnAgregarOC"><i class="fas fa-plus"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="btnCancelarOC">Cancelar</button>
+                    <button id="btnGuardarOC" type="button" class="btn btn-success">Guardar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

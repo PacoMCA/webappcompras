@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:implocal="http://www.sat.gob.mx/implocal" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/implocal http://www.sat.gob.mx/sitio_internet/cfd/implocal/implocal.xsd" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Serie="C" Folio="6716" Fecha="2022-03-01T09:42:26" Sello="PK6lC1OCPequIrCiz6FKaVziIehMBmeuZIlOnwGJZKDdyeHDyPJxfUe7+jMZrKFTNgqKC3d2ex0j4l1jwXmli0MBRCTnhPatuxGP2vBsLyBAJaqonqaiTlcwlhELxxAX2PT+8JbWiH0DkxOdnVzZQ4lhlqpPUkMqai9iQhKVY1AHbkcBdzBOSB36QYSXtBjwX3A/qmm6k2Mv+ChcqfzgNY12ZzXMrYhchrsCBXZe7EfjQMG+aT90tdQ6lp+WcU6wRWdURS1OtjmHnwuBnRpEjKAzcC8VGwJrSHwlO5Zpb1eLGYOdGnnP58T0ulbMf8+5xexxF0m2L0bp0uFM5/G/Gw==" FormaPago="03" NoCertificado="00001000000504380601" Certificado="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" CondicionesDePago="TRANSFERENCIA ELECTRONICA" SubTotal="60000.00" Moneda="MXN" Total="55698.00" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="37355">
+	<cfdi:Emisor Rfc="MUGM6612044N5" Nombre="MARTIN MUÑOZ GUTIERREZ" RegimenFiscal="606"/>
+	<cfdi:Receptor Rfc="CMA0301069D4" Nombre="CORPORATIVO MUÑOZ Y ASOCIADOS, S.A. DE C.V." UsoCFDI="G03"/>
+	<cfdi:Conceptos>
+		<cfdi:Concepto ClaveProdServ="80131500" NoIdentificacion="1076" Cantidad="1" ClaveUnidad="E48" Unidad="SERV" Descripcion="Arrendamiento calle beta no. 94, fracc. industrial delta en la ciudad de leon, gto.&#xA;CORRESPONDIENTE AL MES DE MARZO 2022" ValorUnitario="60000.00" Importe="60000.00">
+			<cfdi:Impuestos>
+				<cfdi:Traslados>
+					<cfdi:Traslado Base="60000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9600.00"/>
+				</cfdi:Traslados>
+				<cfdi:Retenciones>
+					<cfdi:Retencion Base="60000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.106700" Importe="6402.00"/>
+					<cfdi:Retencion Base="60000.00" Impuesto="001" TipoFactor="Tasa" TasaOCuota="0.100000" Importe="6000.00"/>
+				</cfdi:Retenciones>
+			</cfdi:Impuestos>
+			<cfdi:CuentaPredial Numero="0100546270010100165430010010016543002"/>
+		</cfdi:Concepto>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos TotalImpuestosRetenidos="12402.00" TotalImpuestosTrasladados="9600.00">
+		<cfdi:Retenciones>
+			<cfdi:Retencion Impuesto="002" Importe="6402.00"/>
+			<cfdi:Retencion Impuesto="001" Importe="6000.00"/>
+		</cfdi:Retenciones>
+		<cfdi:Traslados>
+			<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9600.00"/>
+		</cfdi:Traslados>
+	</cfdi:Impuestos>
+	<cfdi:Complemento>
+		<implocal:ImpuestosLocales version="1.0" TotaldeRetenciones="1500.00" TotaldeTraslados="0.00">
+			<implocal:RetencionesLocales ImpLocRetenido="CEDULAR RET." TasadeRetencion="2.50" Importe="1500.00"/>
+		</implocal:ImpuestosLocales>
+		<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="1.1" UUID="799AA008-6F88-DA41-965E-0066443B644E" FechaTimbrado="2022-03-01T09:44:57" RfcProvCertif="SCD110105654" SelloCFD="PK6lC1OCPequIrCiz6FKaVziIehMBmeuZIlOnwGJZKDdyeHDyPJxfUe7+jMZrKFTNgqKC3d2ex0j4l1jwXmli0MBRCTnhPatuxGP2vBsLyBAJaqonqaiTlcwlhELxxAX2PT+8JbWiH0DkxOdnVzZQ4lhlqpPUkMqai9iQhKVY1AHbkcBdzBOSB36QYSXtBjwX3A/qmm6k2Mv+ChcqfzgNY12ZzXMrYhchrsCBXZe7EfjQMG+aT90tdQ6lp+WcU6wRWdURS1OtjmHnwuBnRpEjKAzcC8VGwJrSHwlO5Zpb1eLGYOdGnnP58T0ulbMf8+5xexxF0m2L0bp0uFM5/G/Gw==" NoCertificadoSAT="00001000000502000436" SelloSAT="luE8cfVDPyLOxqP74Y6ZFaqe595tbzyD4y1vCoQjnmiy2BmYjSVZynnwDF7lQWNLBpXEIozwA9SKb3+Dk02JDl8GeOCvp108cgUHRlXy3B+70QfIMS/5CtwFvmmq4gJfMv+Qkm1tPk6K5CX0ecPXvgL7CbQ4gfO+HJXjKvrHbsw0eCdaIy9EOI4OUGgfDms36UzxOt4dN/5ketSr/nnoMb72+PcFYEN4LvIZIoLbrjVO5je/99kxkTNnj8mRE/Wr1+PQbHSd926Fimq3RFIPTk7fH5iUdWBpAyDqmphUNXLwuEZ+nToaVYv/xw6g/yPufZE7JcooxQvMtOR9efvnuA=="/>
+	</cfdi:Complemento>
+</cfdi:Comprobante>

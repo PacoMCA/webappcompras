@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="CLE" Folio="417964" Fecha="2022-03-15T15:49:28" FormaPago="99" NoCertificado="00001000000504819864" CondicionesDePago="CREDITO A 15 DIAS" SubTotal="6551.71" Descuento="327.59" Moneda="MXN" Total="7219.98" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="37670" Sello="PcSQVjfwEFjrLKVv2jsJBFjKlRm1HP1B3FmL7lmZk5qC/cqY9vn0tPIWMNhTAQl5SU6w+XzVPFe/l/kcg8sWcN6nyvLWg9vMDr2b9wg4jzCJGnKd0C4g01c2OWTe7HzZP+MGUzrlSH8CYy6TnVREMa6q+eFDy29N8eLGQiDwLxmnz2npAIMc9UiYUvDtqO9OA7uJEiSkak2FKgBO58LdjaLZ5zayauD3FVC8XJxOua60ZszqCErSKfNoMqCih8zBkxFM+uHYMVRaZVx8MDn5JSQIVFYSFf0ssuw8LU6xqdUuv+KOgmqNIx0ytZfWVZ2zYEkjVa4XIaE+q9Y2f4Ea4A==" Certificado="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">
+	<cfdi:Emisor Rfc="PBA81062364A" Nombre="PINTAWIL DEL BAJIO S.A. DE C.V." RegimenFiscal="601"/>
+	<cfdi:Receptor Rfc="CMA0301069D4" Nombre="CORPORATIVO MUÑOZ Y ASOCIADOS SA DE CV" UsoCFDI="G03"/>
+	<cfdi:Conceptos>
+		<cfdi:Concepto ClaveProdServ="31211501" NoIdentificacion="0208276" Cantidad="1" ClaveUnidad="H87" Unidad="PZ" 
+		Descripcion="ACQUA 100 BRILLANTE BLANCO" ValorUnitario="2947.41" Importe="2947.41" Descuento="147.37">
+			<cfdi:Impuestos>
+				<cfdi:Traslados>
+					<cfdi:Traslado Base="2800.04" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="448.01"/>
+				</cfdi:Traslados>
+			</cfdi:Impuestos>
+		</cfdi:Concepto>
+		<cfdi:Concepto ClaveProdServ="31211504" NoIdentificacion="0403046" Cantidad="2" ClaveUnidad="H87" Unidad="PZ" 
+		Descripcion="COMEX MULTI PRO ESM. EPOXICO BLANCO" ValorUnitario="1488.36" Importe="2976.72" Descuento="148.84">
+			<cfdi:Impuestos>
+				<cfdi:Traslados>
+					<cfdi:Traslado Base="2827.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="452.46"/>
+				</cfdi:Traslados>
+			</cfdi:Impuestos>
+		</cfdi:Concepto>
+		<cfdi:Concepto ClaveProdServ="31211504" NoIdentificacion="0603056" Cantidad="2" ClaveUnidad="H87" Unidad="PZ" 
+		Descripcion="ENDURECEDOR P COMEX MULTI PRO ESM. EPOXICO" ValorUnitario="313.79" Importe="627.58" Descuento="31.38">
+			<cfdi:Impuestos>
+				<cfdi:Traslados>
+					<cfdi:Traslado Base="596.2" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="95.39"/>
+				</cfdi:Traslados>
+			</cfdi:Impuestos>
+		</cfdi:Concepto>
+	</cfdi:Conceptos>
+	<cfdi:Impuestos TotalImpuestosTrasladados="995.86">
+		<cfdi:Traslados>
+			<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="995.86"/>
+		</cfdi:Traslados>
+	</cfdi:Impuestos>
+	<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="ADF43D6F-D74B-403B-ACE9-9FB5D87DB2F2" FechaTimbrado="2022-03-15T15:49:36" RfcProvCertif="SFE0807172W8" SelloCFD="PcSQVjfwEFjrLKVv2jsJBFjKlRm1HP1B3FmL7lmZk5qC/cqY9vn0tPIWMNhTAQl5SU6w+XzVPFe/l/kcg8sWcN6nyvLWg9vMDr2b9wg4jzCJGnKd0C4g01c2OWTe7HzZP+MGUzrlSH8CYy6TnVREMa6q+eFDy29N8eLGQiDwLxmnz2npAIMc9UiYUvDtqO9OA7uJEiSkak2FKgBO58LdjaLZ5zayauD3FVC8XJxOua60ZszqCErSKfNoMqCih8zBkxFM+uHYMVRaZVx8MDn5JSQIVFYSFf0ssuw8LU6xqdUuv+KOgmqNIx0ytZfWVZ2zYEkjVa4XIaE+q9Y2f4Ea4A==" NoCertificadoSAT="00001000000505619865" SelloSAT="BrA2acG9B9DvJlVK6ky+zQNPrHxRMWMN4fsgAgZ1Mu66WKB8cfStjHrdf8hHhkIiP5Vt53OR22yg1Mb/6CguLM53wu3o9VPEchDWVHLT5S4OEi2XzMeApJHjt2WNvMGoDJ0dkis2/BoJ01b2b5H6HQXEE1KmnRP0KTa04paRc8RAATgdyayDFdDfeU1i3Az6DYU2xD/PKJb+NTBYcstxsJ9Uw7LyMdLxT3ELfyMmk06239u+4WB5wf5vULZqxpihmxMsqsa0II6cvG3RxRwivFETPjPUvAF++5CVVqkat87fwfydlJENJe84xaAK6ZkYMAPkfFGabnPzoBfIdwkA/w=="/></cfdi:Complemento></cfdi:Comprobante>

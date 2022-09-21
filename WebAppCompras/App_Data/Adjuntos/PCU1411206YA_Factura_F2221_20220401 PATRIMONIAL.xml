@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="F" Folio="2221" Fecha="2022-04-01T12:38:14" FormaPago="99" NoCertificado="00001000000412851884" Certificado="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" SubTotal="3056.40" Moneda="MXN" Total="3545.42" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="37360"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Sello="Bdz9hRdenz1ugEmyFCiemJh2aP4mNEpWc8xz57FmKh1NHLc7/IyWnHVq1noE+AipVLWmRMBqJBYEe6c9boaQOwnUdgX4uPEwV3MONtvNeyQqzC0xnwfqGoFGK9pZXx/B5+2pWiTp9EYHJD+urRsjcjShzxiX5ZVI88ipGyqn1uvO0aQ8W+4QxDLSMdRvZxt4d8FqtdhXKlbaY/YmBA9WODHtGWRC+ZYR1z7DUVfx4cxJHHvrBvhYHZglVyZEvMZS72U0aFOJZVB5mI23iQkf1rvFgbE/OBgTA8GgonMok1qEPM+mLAzWfVeorZ9Cef2nPH2neUgOp+4lrnO7bawvUg==">
+    <cfdi:Emisor Rfc="PCU1411206YA" Nombre="PATRIMONIAL 40 S.C." RegimenFiscal="601"></cfdi:Emisor>
+    <cfdi:Receptor Rfc="CMA0301069D4" Nombre="CORPORATIVO MUÑOZ Y ASOCIADOS SA DE CV" UsoCFDI="G03"></cfdi:Receptor>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111500" NoIdentificacion="1278" Cantidad="1" ClaveUnidad="E48" Unidad="S01" Descripcion="HONORARIOS SUPERVISION FISCAL FEBRERO 2022" ValorUnitario="3056.40" Importe="3056.40">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="3056.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="489.024"></cfdi:Traslado>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="489.02">
+        <cfdi:Traslados>
+            <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="489.02"></cfdi:Traslado>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital RfcProvCertif="TSP080724QW6" Version="1.1" UUID="CB9DB0EF-7F93-4B6C-BCBC-F16656B18199" FechaTimbrado="2022-04-01T12:45:06" SelloCFD="Bdz9hRdenz1ugEmyFCiemJh2aP4mNEpWc8xz57FmKh1NHLc7/IyWnHVq1noE+AipVLWmRMBqJBYEe6c9boaQOwnUdgX4uPEwV3MONtvNeyQqzC0xnwfqGoFGK9pZXx/B5+2pWiTp9EYHJD+urRsjcjShzxiX5ZVI88ipGyqn1uvO0aQ8W+4QxDLSMdRvZxt4d8FqtdhXKlbaY/YmBA9WODHtGWRC+ZYR1z7DUVfx4cxJHHvrBvhYHZglVyZEvMZS72U0aFOJZVB5mI23iQkf1rvFgbE/OBgTA8GgonMok1qEPM+mLAzWfVeorZ9Cef2nPH2neUgOp+4lrnO7bawvUg==" NoCertificadoSAT="00001000000501960426" SelloSAT="bxjIAx2uXwvbqk0y5WUZHATY7BcQhGVUGdEbLl3vbTR1Hm0PSlCtdpTh787JF7+mEN+kB9z8b54TgZN5hK26xDyfXUulrFxswtMZ52WdjfV+iOXPNkgrewYANBSC7uNfYSW9yHvnh1uppp+B/eBiZuZBxFhWNRu7v6TKMK78Q28Q+MmTkaPjJ4VP2VtYGImcnx9etO/rscXlKPcXOySWFgeDF0G8eLtflj+GKh+FnL29CW7+8nSTv6hLYOCuKqoJN3xalp0M5Bq8bC1yKRnORhjukiXqgspbJgdoRRkXqoAuNzJpOWGCdUvdM5s5n5Efk83sDPw1BuByluQYA2b1DQ==" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"
+            xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

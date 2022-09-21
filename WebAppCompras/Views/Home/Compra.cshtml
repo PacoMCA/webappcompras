@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Compra";
+}
+
+<br />
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Solicitudes</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered bg-white rounded">
+            <thead class="bg-info text-white">
+                <tr>
+                    <th>Opciones</th>
+                    <th>Id</th>
+                    <th>Nombre del empleado</th>
+                    <th>Dilacion</th>
+                    <th>Tipo solicitud</th>
+                    <th>Monto</th>
+                    <th>Fecha</th>
+                    <th>Empresa</th>
+                    <th>Etapa</th>
+                    <th>Responsable</th>
+                    <th>Proveedor</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+
+<script>
+    $(function () {
+        $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+            }
+        })
+    });
+</script>
+

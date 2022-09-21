@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Productos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Productos</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-borderless shadow bg-white rounded" id="tblProductos">
+            <thead class="bg-info text-white">
+                <tr>
+                    <th>Opciones</th>
+                    <th>Producto</th>
+                    <th>Unidad</th>
+                    @*<th>Cuenta contable</th>*@
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+<!-- /.card -->
+<script>
+    $(document).ready(function () {
+
+
+
+        $.ajax({
+            type: "POST",
+            url: "/Productos/getProductos/",
+            data: '{}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: OnSuccess,
+            failure: function (response) {
+
+            },
+            error: function (response) {
+
+            }
+        });
+
+        function OnSuccess(response) {
+            $("#tblProductos").DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+                },
+                bLengthChange: true,
+                lengthMenu: [[20, 30, -1], [20, 30, "Todo"]],
+                bFilter: true,
+                bSort: true,
+                bPaginate: true,
+                data: response,
+                columns: [
+                    {
+                        "render": function (data, type, full, meta) {
+                            return "<a class='btn bg-info' type='button' onclick=EditarProducto('" + full.Id + "'); ><i class='fa fa-eye'></i></a>";
+                        }
+                    },
+                    { 'data': 'Descripcion' },
+                    { 'data': 'Unidad' }
+                ]
+            });
+        }
+
+        //
+        //onclick=DeleteData('" + full.Id + "');
+    });
+    function EditarProducto(id) {
+        var url = '@Url.Content("~/")' + "Productos/Edit/" + id + "";
+        window.location.href = url;
+    }
+</script>

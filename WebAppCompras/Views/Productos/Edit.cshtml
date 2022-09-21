@@ -1,0 +1,139 @@
+﻿@model WebAppCompras.Models.Producto
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Editar producto</h3>
+        </div>
+        
+        <!-- /.card-header -->
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            
+            @Html.HiddenFor(model => model.Id, new { id = "idProducto" })
+            @Html.HiddenFor(model => model.StrImpuestos, new { id = "ltsImpuestos" })
+
+            <div class="form-group">
+                <label>Producto</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control", id="txtDescripcion" } })
+                    @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ClaveProdServ, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ClaveProdServ, new { htmlAttributes = new { @class = "form-control", id="txtClave" } })
+                    @Html.ValidationMessageFor(model => model.ClaveProdServ, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Unidad, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Unidad, new { htmlAttributes = new { @class = "form-control", id = "txtUnidad" } })
+                    @Html.ValidationMessageFor(model => model.Unidad, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Impuestos</label>
+                        <select class="select2" multiple="multiple" style="width: 100%;" id="impuestos">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <input type="button" value="Actualizar" class="btn btn-outline-success" id="btnUpdate" />
+                        <a class="btn btn-outline-danger" href="~/Productos">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+}
+
+<script>
+    $(document).ready(function () {
+        //Initialize Select2 Elements
+        $('#impuestos').select2({
+            theme: 'bootstrap4'
+        })
+        var lismp = $("#ltsImpuestos").val();
+        console.log(lismp);
+        console.log('<<<<<<<<>>>>>>>>>>');
+        console.log(lismp.split('|'));
+        var ri = lismp.split('|');
+        $.ajax({
+            url: '/Productos/getImpuestos',
+            type: "GET",
+            dataType: 'json',
+            success: function (data) {
+                $.each(data, function (i, item) {
+                    for (var i = 0; i < item.length; i++) {
+                        //console.log(item[i]._Impuesto);
+                        $("#impuestos").append('<option value="' + item[i]._Impuesto + '">' + item[i]._Impuesto + '</option>');
+                    }
+
+                    $("#impuestos").val(ri);
+                })
+            }
+        })
+
+        $("#btnUpdate").click(function () {
+            var idP = $("#idProducto").val();
+            var txtD = $("#txtDescripcion").val();
+            var txtC = $("#txtClave").val();
+            var txtU = $("#txtUnidad").val();
+            console.log("IMPUESTOS ---->>>")
+            var ls = "";
+            var sa = $("#impuestos").val();
+            for (var i = 0; i < sa.length; i++) {
+                ls += "|"+sa[i];
+            }
+            console.log(ls);
+            var pto = {
+                id: idP,
+                Descripcion: txtD,
+                ClaveProdServ: txtC,
+                Unidad: txtU,
+                StrImpuestos: ls
+            }
+            console.log(pto);
+
+            $.ajax({
+                type: 'POST',
+                url: '/Productos/Edit/',
+                content: "application/json; charset=utf-8",
+                //dataType: "json",
+                data: { p: pto},
+                success: function (data) {
+                    alert(data)
+                    window.location.href = '/Productos'
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            })
+
+        })
+    })
+</script>

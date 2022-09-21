@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "OC";
+}
+
+<br />
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Solicitudes</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-borderless shadow bg-white rounded" id="tblOC">
+            <thead class="bg-info text-white">
+                <tr>
+                    <th>Opciones</th>
+                    <th>Id</th>
+                    <th>Nombre empleado</th>
+                    <th>Dilacion</th>
+                    <th>Tipo solicitud</th>
+                    <th>Monto</th>
+                    <th>Fecha</th>
+                    <th>Empresa</th>
+                    <th>Etapa</th>
+                    <th>Responsable</th>
+                    <th>Proveedor</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+
+<script>
+    $(document).ready(function () {
+
+        $.ajax({
+            type: "POST",
+            url: "/Home/getOC/",
+            data: '{}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: OnSuccess,
+            failure: function (response) {
+                
+            },
+            error: function (response) {
+                
+            }
+        });
+
+        function OnSuccess(response) {
+            $("#tblOC").DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+                },
+                bLengthChange: true,
+                lengthMenu: [[20, 30, -1], [20, 30, "Todo"]],
+                bFilter: true,
+                bSort: true,
+                bPaginate: true,
+                data: response,
+                columns: [
+                    {
+                        "render": function (data, type, full, meta) {
+                            return "<span class='badge bg-info'><a class='fas fa-file' href='#" + full.Id + "' style='color: white'></a></span>";
+                        }
+                    },
+                    { 'data': 'Id' },
+                    { 'data': 'Usuario' },
+                    { 'data': 'Dilacion' },
+                    { 'data': 'TipoSolicitud' },
+                    { 'data': 'Monto' },
+                    { 'data': 'Fecha' },
+                    { 'data': 'Empresa' },
+                    { 'data': 'Etapa' },
+                    { 'data': 'Responsable' },
+                    { 'data': 'Proveedor' }
+                ]
+            });
+        }       
+    });
+</script>
+
+
+
